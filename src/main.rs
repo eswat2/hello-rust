@@ -18,12 +18,8 @@ fn main() {
 
     // Solve, print or convert the sudoku to another format
     if let Some(solution) = sudoku.solve_unique() {
-        let elapsed = solved.elapsed().as_nanos();
-        // print the solution in line format
-        println!("Solution: {} ns", elapsed);
+        // print the solution in line format...
+        println!("Solution: {} ns", solved.elapsed().as_nanos());
         println!("{}", solution);
-
-        // or return it as a byte array
-        let _cell_contents: [u8; 81] = solution.to_bytes();
     }
 }
