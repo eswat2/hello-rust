@@ -1,5 +1,5 @@
+use std::time::Instant;
 use sudoku::Sudoku;
-use std::time::{Instant};
 
 fn main() {
     let start = Instant::now();
