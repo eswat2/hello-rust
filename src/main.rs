@@ -16,7 +16,7 @@ fn main() {
     let sudoku = Sudoku::from_str_line(sudoku_line).unwrap();
     let solved = Instant::now();
 
-    // Solve, print or convert the sudoku to another format
+    // Solve the sudoku...
     if let Some(solution) = sudoku.solve_unique() {
         // print the solution in line format...
         println!("Solution: {} ns", solved.elapsed().as_nanos());
